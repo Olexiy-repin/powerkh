@@ -1,0 +1,237 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: 100%;
+  font-family: $secondary-font;
+  padding: 10px 0;
+  margin: 0 auto;
+  background-color: #fff;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  @include mq("tablet") {
+    max-width: 670px;
+  }
+
+  @include mq("desktop") {
+    max-width: 1158px;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 16px;
+
+  @include mq("tablet", max) {
+    &__submenu {
+      display: none;
+    }
+  }
+
+  @include mq("tablet") {
+    margin-right: 96px;
+
+    &__submenu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #c4c4c4;
+      width: 282px;
+      padding: 34px 18px;
+      border-top: 24px solid #fff;
+      transform: scaleY(0);
+      visibility: hidden;
+      pointer-events: none;
+      transform-origin: right top;
+      transition: all 250ms linear;
+
+      > .navigation__list-item:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  @include mq("desktop") {
+    &__submenu {
+      width: 306px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
+  &__list-item {
+    @include mq("tablet") {
+      position: relative;
+    }
+    &_services,
+    &_about {
+      @include mq("tablet", max) {
+        display: none;
+      }
+    }
+
+    &_services {
+      cursor: pointer;
+      @include mq("tablet") {
+        display: flex;
+        align-items: center;
+        &::after {
+          margin-left: 7px;
+          content: "";
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 7px solid #000;
+          border-bottom: 0px solid transparent;
+        }
+
+        &:hover,
+        &:focus {
+          > .navigation__submenu {
+            transform: scaleY(1);
+            visibility: visible;
+            pointer-events: auto;
+          }
+        }
+      }
+
+      &:hover,
+      &:focus {
+        > .navigation__list-link {
+          &::after {
+            transform: scaleX(1);
+          }
+        }
+      }
+    }
+  }
+
+  &__list > &__list-item:not(:last-child) {
+    @include mq("tablet") {
+      margin-right: 52px;
+    }
+  }
+  &__list-link {
+    @include font(14px, 700, 16px);
+    color: #000;
+
+    &::after {
+      display: block;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #000000;
+      transform: scaleX(0);
+      transition: transform 250ms linear;
+    }
+
+    &:hover,
+    &:focus {
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.menu-btn {
+  width: 25px;
+  height: 23px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &__svg {
+    fill: rgb(14, 14, 14);
+    transition: fill 250ms linear;
+
+    .menu-btn:hover &,
+    .menu-btn:focus & {
+      fill: rgba(14, 14, 14, 0.7);
+    }
+  }
+
+  &__svg_close-icon {
+    display: none;
+  }
+
+  &.is-open {
+    .menu-btn__svg_burger-icon {
+      display: none;
+    }
+
+    .menu-btn__svg_close-icon {
+      display: block;
+    }
+  }
+}
+
+.modal-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #cdcdcd;
+  overflow: hidden;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 250ms linear;
+
+  @include mq("tablet") {
+    max-width: 390px;
+    left: unset;
+    right: 20px;
+  }
+
+  &.is-open {
+    visibility: visible;
+    pointer-events: auto;
+    padding: 36px 0;
+    height: 100vh;
+
+    @include mq("tablet") {
+      padding: 100px 0;
+    }
+  }
+
+  &__submenu {
+    padding: 10px 0;
+    padding-left: 26px;
+  }
+
+  &__navigation {
+    max-width: 360px;
+    padding: 0 20px;
+    margin: 0 auto;
+
+    &-item:not(:last-child) {
+      margin-bottom: 6px;
+    }
+
+    & > .modal-menu__navigation-item_services {
+      margin-bottom: 0;
+    }
+
+    &-link {
+      font-family: inherit;
+      @include font(16px, 700, 18px);
+      color: #000;
+
+      &_services {
+        color: #828282;
+      }
+    }
+  }
+}

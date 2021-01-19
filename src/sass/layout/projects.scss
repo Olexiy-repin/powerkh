@@ -1,0 +1,162 @@
+.projects {
+  padding-top: 54px;
+  padding-bottom: 66px;
+
+  &__title {
+    font-family: $secondary-font;
+    @include font(20px, 700, 22px);
+    color: #0e0e0e;
+    margin-bottom: 60px;
+  }
+
+  &__text-content {
+    margin-bottom: 44px;
+  }
+
+  &__left-text-content {
+    margin-bottom: 26px;
+  }
+
+  &__text {
+    font-family: $main-font;
+    @include font(14px, 400, 20px);
+    color: #0e0e0e;
+
+    .projects__left-text-content > & {
+      &:not(:last-child) {
+        margin-bottom: 26px;
+      }
+    }
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      border: 2px solid #cdcdcd;
+      padding: 16px 14px;
+      min-height: 210px;
+    }
+  }
+
+  &__list-title {
+    font-family: $secondary-font;
+    @include font(16px, 700, 18px);
+    color: #0e0e0e;
+    margin-bottom: 30px;
+  }
+
+  &__list-description {
+    font-family: $main-font;
+    @include font(14px, 400, 20px);
+    color: #0e0e0e;
+  }
+
+  &__list-modal-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: $secondary-font;
+    @include font(16px, 700, 18px);
+
+    background-color: transparent;
+    border: 2px solid #0e0e0e;
+    min-height: 108px;
+    padding: 18px 30px 18px 14px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 250ms linear;
+
+    &:hover,
+    &:focus {
+      background-color: #000;
+      color: #fff;
+
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+
+  &__list-modal-text {
+    max-width: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .projects {
+    &__list-item {
+      &:nth-child(2n) {
+        border-left: none;
+      }
+
+      &:not(:nth-last-child(-n + 2)) {
+        border-bottom: none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .projects {
+    &__list-item {
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@include mq("tablet") {
+  .projects {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__list-item {
+      flex-basis: 50%;
+    }
+
+    &__list-modal-btn {
+      width: calc(100% + 2px);
+      margin: 0px 0 0 -2px;
+    }
+  }
+}
+
+@include mq("desktop") {
+  .projects {
+    padding-top: 44px;
+    padding-bottom: 28px;
+    &__text-content {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__left-text-content,
+    &__right-text-content {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__list-item {
+      flex-basis: calc(100% / 3);
+
+      &:nth-child(3n),
+      &:nth-child(3n - 1) {
+        border-left: none;
+      }
+
+      &:not(:nth-last-child(-n + 3)) {
+        border-bottom: none;
+      }
+
+      &:not(:last-child) {
+        min-height: 250px;
+        padding: 20px 16px;
+      }
+    }
+
+    &__left-text-content {
+      margin-bottom: 0;
+    }
+  }
+}

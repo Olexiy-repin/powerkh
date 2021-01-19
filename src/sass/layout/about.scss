@@ -1,0 +1,67 @@
+.about {
+  padding-top: 34px;
+  padding-bottom: 20px;
+
+  &__title {
+    font-family: $secondary-font;
+    @include font(20px, 700, 22px);
+    color: #0e0e0e;
+    margin-bottom: 66px;
+
+    span {
+      display: block;
+      margin-top: 18px;
+    }
+  }
+
+  &__text {
+    @include font(14px, 400, 20px);
+    color: #0e0e0e;
+  }
+}
+
+@include mq("tablet") {
+  .about {
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@include mq("desktop", max) {
+  .about {
+    &__text {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@include mq("desktop") {
+  .about {
+    padding-top: 46px;
+    padding-bottom: 50px;
+
+    &__title {
+      margin-bottom: 24px;
+      span {
+        margin-top: 15px;
+      }
+    }
+    &__text-wrapper {
+      display: flex;
+    }
+
+    &__text {
+      width: 555px;
+    }
+
+    &__text:not(:nth-child(even)) {
+      margin-right: 30px;
+    }
+  }
+}

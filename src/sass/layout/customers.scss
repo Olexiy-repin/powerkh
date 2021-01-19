@@ -1,0 +1,157 @@
+.customers {
+  padding-top: 42px;
+  padding-bottom: 54px;
+
+  &__title {
+    font-family: $secondary-font;
+    @include font(20px, 700, 22px);
+    color: #0e0e0e;
+    margin-bottom: 58px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &-link {
+      &::before {
+        display: block;
+        content: "";
+        background-image: url("../images/customers/logo-sprite.png");
+      }
+
+      &_reis {
+        &::before {
+          width: 165px;
+          height: 87px;
+          background-position: -10px -130px;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            background-position: -195px -130px;
+          }
+        }
+      }
+
+      &_firmus {
+        &::before {
+          width: 165px;
+          height: 100px;
+          background-position: -10px -10px;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            background-position: -195px -10px;
+          }
+        }
+      }
+
+      &_reveal {
+        &::before {
+          width: 165px;
+          height: 21px;
+          background-position: -10px -425px;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            background-position: -195px -425px;
+          }
+        }
+      }
+
+      &_architectur {
+        &::before {
+          width: 165px;
+          height: 31px;
+          background-position: -10px -374px;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            background-position: -195px -374px;
+          }
+        }
+      }
+
+      &_revere {
+        &::before {
+          width: 162px;
+          height: 76px;
+          background-position: -380px -10px;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            background-position: -380px -106px;
+          }
+        }
+      }
+
+      &_wdg {
+        &::before {
+          width: 117px;
+          height: 117px;
+          background-position: -10px -237px;
+        }
+
+        &:hover,
+        &:focus {
+          &::before {
+            background-position: -147px -237px;
+          }
+        }
+      }
+    }
+
+    &-item {
+      width: 49%;
+    }
+  }
+}
+
+@include mq("tablet", max) {
+  .customers {
+    &__list {
+      &-item {
+        &:not(:nth-last-child(-n + 2)) {
+          margin-bottom: 60px;
+        }
+      }
+    }
+  }
+}
+
+@include mq("tablet") {
+  .customers {
+    padding-top: 30px;
+    padding-bottom: 44px;
+    &__list {
+      &-item {
+        display: flex;
+        justify-content: center;
+        width: 26%;
+      }
+    }
+  }
+}
+
+@include mq("desktop") {
+  .customers {
+    padding-top: 34px;
+    &__list {
+      &-item {
+        width: max-content;
+      }
+    }
+  }
+}

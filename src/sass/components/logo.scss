@@ -1,0 +1,27 @@
+.logo {
+  &_hero {
+    margin-bottom: 16px;
+  }
+}
+
+.logo-svg {
+  &_hero {
+    width: 80px;
+    height: 62px;
+  }
+}
+
+@include mq("tablet") {
+  .logo {
+    &_hero {
+      margin-bottom: 36px;
+    }
+  }
+
+  .logo-svg {
+    &_hero {
+      width: 118px;
+      height: 96px;
+    }
+  }
+}

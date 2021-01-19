@@ -1,0 +1,19 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+@import "./utils/fonts.scss";
+@import "./utils/mixins.scss";
+@import "./utils/variables.scss";
+@import "./base/common.scss";
+@import "./base/container.scss";
+@import "./components/logo.scss";
+@import "./components/banner.scss";
+
+@import "./layout/header.scss";
+@import "./layout/hero.scss";
+@import "./layout/services.scss";
+@import "./layout/about.scss";
+@import "./layout/cases.scss";
+@import "./layout/customers.scss";
+@import "./layout/projects.scss";
+@import "./layout/footer.scss";

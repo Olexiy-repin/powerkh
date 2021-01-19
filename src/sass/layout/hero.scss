@@ -1,0 +1,32 @@
+.hero {
+  padding-top: 67px;
+
+  background-image: url("../images/hero/bg-mobile.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  .container {
+    position: relative;
+    min-height: 634px;
+  }
+}
+
+@include mq("tablet") {
+  .hero {
+    background-image: url("../images/hero/bg-tablet.jpg");
+
+    .container {
+      min-height: 762px;
+    }
+  }
+}
+
+@include mq("desktop") {
+  .hero {
+    .container {
+      min-height: 916px;
+    }
+  }
+}
