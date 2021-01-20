@@ -2,493 +2,508 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Powerkh</title>
-  <!-- Сюда будет всталена ссылка на файл стилей -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
-  <!-- inject:css -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- endinject -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Powerkh</title>
+    <!-- Сюда будет всталена ссылка на файл стилей -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-  <header class="header">
-      <div class="container">
-          <nav class="navigation">
-              <a href="/" class="logo" aria-label="logotype">
-                  <svg class="logo-svg" width="54" height="43">
-                      <use href="./images/sprite.svg#logo"></use>
-                  </svg>
-              </a>
-              <ul class="navigation__list">
-                  <li class="navigation__list-item navigation__list-item_services">
-                      <a href="#" class="navigation__list-link">Services</a>
-                      <ul class="navigation__submenu">
-                          <li class="navigation__list-item">
-                              <a href="" class="navigation__list-link">BIM Modeling</a>
-                          </li>
-                          <li class="navigation__list-item">
-                              <a href="" class="navigation__list-link">BIM Coordination</a>
-                          </li>
-                          <li class="navigation__list-item">
-                              <a href="" class="navigation__list-link">BIM Content</a>
-                          </li>
-                          <li class="navigation__list-item">
-                              <a href="" class="navigation__list-link">Design Automation</a>
-                          </li>
-                          <li class="navigation__list-item">
-                              <a href="" class="navigation__list-link">Prefabrication & Fabrication</a>
-                          </li>
-                          <li class="navigation__list-item">
-                              <a href="" class="navigation__list-link">Structural detailing</a>
-                          </li>
-                          <li class="navigation__list-item">
-                              <a href="" class="navigation__list-link">Scan-to-BIM</a>
-                          </li>
-                      </ul>
-                  </li>
-                  <li class="navigation__list-item">
-                      <a href="#" class="navigation__list-link">Case Studies</a>
-                  </li>
-                  <li class="navigation__list-item navigation__list-item_about">
-                      <a href="#" class="navigation__list-link">About</a>
-                  </li>
-              </ul>
-          </nav>
-  
-  
-          <button type="button" aria-expanded="false" aria-controls="modal-menu" class="menu-btn" data-menu-button>
-              <svg class="menu-btn__svg" width="25" height="23">
-                  <use class="menu-btn__svg_burger-icon" href="./images/sprite.svg#burger-icon"></use>
-                  <use class="menu-btn__svg_close-icon" href="./images/sprite.svg#close-icon"></use>
-              </svg>
-          </button>
-      </div>
-      <div class="modal-menu" data-menu>
-          <ul class="modal-menu__navigation">
-              <li class="modal-menu__navigation-item">
-                  <a href="" class="modal-menu__navigation-link active-nav-link">Home</a>
-              </li>
-              <li class="modal-menu__navigation-item">
-                  <a href="" class="modal-menu__navigation-link">Case Studies</a>
-              </li>
-              <li class="modal-menu__navigation-item modal-menu__navigation-item_services">
-                  <a href="" class="modal-menu__navigation-link modal-menu__navigation-link_services">Services</a>
-                  <ul class="modal-menu__submenu">
-                      <li class="modal-menu__navigation-item">
-                          <a href="#" class="modal-menu__navigation-link">BIM Modeling</a>
-                      </li>
-                      <li class="modal-menu__navigation-item">
-                          <a href="#" class="modal-menu__navigation-link">BIM Coordination</a>
-                      </li>
-                      <li class="modal-menu__navigation-item">
-                          <a href="#" class="modal-menu__navigation-link">BIM Content</a>
-                      </li>
-                      <li class="modal-menu__navigation-item">
-                          <a href="#" class="modal-menu__navigation-link">Design Automation</a>
-                      </li>
-                      <li class="modal-menu__navigation-item">
-                          <a href="#" class="modal-menu__navigation-link">Prefabrication & Fabrication</a>
-                      </li>
-                      <li class="modal-menu__navigation-item">
-                          <a href="#" class="modal-menu__navigation-link">Structural detailing</a>
-                      </li>
-                      <li class="modal-menu__navigation-item">
-                          <a href="#" class="modal-menu__navigation-link">Scan-to-BIM</a>
-                      </li>
-                  </ul>
-              </li>
-              <li class="modal-menu__navigation-item">
-                  <a href="" class="modal-menu__navigation-link">Insights</a>
-              </li>
-              <li class="modal-menu__navigation-item">
-                  <a href="" class="modal-menu__navigation-link">About</a>
-              </li>
-              <li class="modal-menu__navigation-item">
-                  <a href="" class="modal-menu__navigation-link">Career</a>
-              </li>
-              <li class="modal-menu__navigation-item">
-                  <a href="" class="modal-menu__navigation-link">Contacts</a>
-              </li>
-          </ul>
-      </div>
-  </header>
-  <main>
-    <section class="hero">
+    <header class="header">
         <div class="container">
-            <div class="banner banner_hero">
-                <a href="/" class="logo logo_hero" aria-label="logotype">
-                    <svg class="logo-svg logo-svg_hero">
+            <nav class="navigation">
+                <a href="/" class="logo" aria-label="logotype">
+                    <svg class="logo-svg" width="54" height="43">
                         <use href="./images/sprite.svg#logo"></use>
                     </svg>
                 </a>
-                <p class="banner__text">Looking for a way to visualize and manage your construction?
-                    <br>
-                    <br>
-                    <b>PowerKh</b> is your high-end digital design partner with extensive practical experience and a
-                    portfolio of
-                    over 100 successful state-of-the-art BIM and VDC projects.
-                    <br>
-                    <br>
-                    We work with clients from North America and Europe, covering modern construction and historical
-                    renovation.
-                </p>
-                <button class="banner__button">Disscuss the talk
-                    <svg>
-                        <use href="./images/sprite.svg#right-arrow"></use>
-                    </svg>
-                </button>
-                <ul class="modeling-links">
-                    <li class="modeling-links__item modeling-links__item_first">
-                        <a href="#">
-                            <div class="modeling-links__content">
-                                <h2 class="modeling-links__title">Modeling</h2>
-                                <p class="modeling-links__description">Hotel in USA</p>
-                                <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
-                                    class="modeling-links__image">
+                <ul class="navigation__list">
+                    <li class="navigation__list-item navigation__list-item_services">
+                        <a href="#" class="navigation__list-link">Services</a>
+                        <ul class="navigation__submenu">
+                            <li class="navigation__list-item">
+                                <a href="" class="navigation__list-link">BIM Modeling</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="" class="navigation__list-link">BIM Coordination</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="" class="navigation__list-link">BIM Content</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="" class="navigation__list-link">Design Automation</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="" class="navigation__list-link">Prefabrication & Fabrication</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="" class="navigation__list-link">Structural detailing</a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="" class="navigation__list-link">Scan-to-BIM</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navigation__list-item">
+                        <a href="#" class="navigation__list-link">Case Studies</a>
+                    </li>
+                    <li class="navigation__list-item navigation__list-item_about">
+                        <a href="./about-page.html" class="navigation__list-link">About</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <button type="button" aria-expanded="false" aria-controls="modal-menu" class="menu-btn" data-menu-button>
+                <svg class="menu-btn__svg" width="25" height="23">
+                    <use class="menu-btn__svg_burger-icon" href="./images/sprite.svg#burger-icon"></use>
+                    <use class="menu-btn__svg_close-icon" href="./images/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="modal-menu" data-menu>
+            <ul class="modal-menu__navigation">
+                <li class="modal-menu__navigation-item">
+                    <a href="" class="modal-menu__navigation-link active-nav-link">Home</a>
+                </li>
+                <li class="modal-menu__navigation-item">
+                    <a href="" class="modal-menu__navigation-link">Case Studies</a>
+                </li>
+                <li class="modal-menu__navigation-item modal-menu__navigation-item_services">
+                    <a href="" class="modal-menu__navigation-link modal-menu__navigation-link_services">Services</a>
+                    <ul class="modal-menu__submenu">
+                        <li class="modal-menu__navigation-item">
+                            <a href="#" class="modal-menu__navigation-link">BIM Modeling</a>
+                        </li>
+                        <li class="modal-menu__navigation-item">
+                            <a href="#" class="modal-menu__navigation-link">BIM Coordination</a>
+                        </li>
+                        <li class="modal-menu__navigation-item">
+                            <a href="#" class="modal-menu__navigation-link">BIM Content</a>
+                        </li>
+                        <li class="modal-menu__navigation-item">
+                            <a href="#" class="modal-menu__navigation-link">Design Automation</a>
+                        </li>
+                        <li class="modal-menu__navigation-item">
+                            <a href="#" class="modal-menu__navigation-link">Prefabrication & Fabrication</a>
+                        </li>
+                        <li class="modal-menu__navigation-item">
+                            <a href="#" class="modal-menu__navigation-link">Structural detailing</a>
+                        </li>
+                        <li class="modal-menu__navigation-item">
+                            <a href="#" class="modal-menu__navigation-link">Scan-to-BIM</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="modal-menu__navigation-item">
+                    <a href="" class="modal-menu__navigation-link">Insights</a>
+                </li>
+                <li class="modal-menu__navigation-item">
+                    <a href="" class="modal-menu__navigation-link">About</a>
+                </li>
+                <li class="modal-menu__navigation-item">
+                    <a href="" class="modal-menu__navigation-link">Career</a>
+                </li>
+                <li class="modal-menu__navigation-item">
+                    <a href="" class="modal-menu__navigation-link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="banner banner_hero">
+                    <a href="/" class="logo logo_hero" aria-label="logotype">
+                        <svg class="logo-svg logo-svg_hero">
+                            <use href="./images/sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <p class="banner__text">Looking for a way to visualize and manage your construction?
+                        <br>
+                        <br>
+                        <b>PowerKh</b> is your high-end digital design partner with extensive practical experience and a
+                        portfolio of
+                        over 100 successful state-of-the-art BIM and VDC projects.
+                        <br>
+                        <br>
+                        We work with clients from North America and Europe, covering modern construction and historical
+                        renovation.
+                    </p>
+                    <button class="banner__button">Disscuss the talk
+                        <svg>
+                            <use href="./images/sprite.svg#right-arrow"></use>
+                        </svg>
+                    </button>
+                    <ul class="modeling-links">
+                        <li class="modeling-links__item modeling-links__item_first">
+                            <a href="#">
+                                <div class="modeling-links__content">
+                                    <h2 class="modeling-links__title">Modeling</h2>
+                                    <p class="modeling-links__description">Hotel in USA</p>
+                                    <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
+                                        class="modeling-links__image">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="modeling-links__item modeling-links__item_second">
+                            <a href="#">
+                                <div class="modeling-links__content">
+                                    <h2 class="modeling-links__title">Modeling</h2>
+                                    <p class="modeling-links__description">Hotel in USA</p>
+                                    <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
+                                        class="modeling-links__image">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="modeling-links__item modeling-links__item_third">
+                            <a href="#">
+                                <div class="modeling-links__content">
+                                    <h2 class="modeling-links__title">Modeling</h2>
+                                    <p class="modeling-links__description">Hotel in USA</p>
+                                    <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
+                                        class="modeling-links__image">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="modeling-links__item modeling-links__item_fourth">
+                            <a href="#">
+                                <div class="modeling-links__content">
+                                    <h2 class="modeling-links__title">Video</h2>
+                                    <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
+                                        class="modeling-links__image">
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <div class="services__left-side">
+                    <h2 class="services__title">Bim services</h2>
+                </div>
+                <div class="services__right-side">
+                    <p class="services__text">
+                        A digital design and engineering company, we offer a wide array of BIM modeling services that
+                        cover
+                        residential, commercial, educational, industrial, and transportation projects. We also work with
+                        clients
+                        in healthcare, data centers, and retail.
+                    </p>
+                    <p class="services__text">
+                        Our goal is to develop new and optimize existing engineering solutions for architectural and
+                        construction projects. We tuned our digital design tools to deliver high-quality services on
+                        informational modeling of buildings (BIM) and virtual construction (VDC).
+                    </p>
+                    <p class="services__text">
+                        BIM modeling is what we excel at. The specifics of architecture and engineering requirements are
+                        at the
+                        core of every PowerKh project. We help bring down the labor intensity of your construction by
+                        automating
+                        and optimizing the production processes.
+                    </p>
+                    <p class="services__text">
+                        On average, we can make your routine tasks 5 times more efficient. With a focus on effective
+                        building
+                        designs, we strive to improve the way you calculate, build, and operate.
+                    </p>
+                    <p class="services__text">
+                        As a BIM company, we aim to deliver smart and practical solutions to facilitate the work of AEC
+                        (Architecture, Engineering & Construction) professionals.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">Virtual design and construction by skilled professionals <span>Why
+                        Powerkh?</span></h2>
+                <div class="about__text-wrapper">
+                    <p class="about__text"><b>VDC construction</b> is a critical element of a successful building
+                        project. We
+                        offer <b>virtual design and construction</b> services to improve your team's planning,
+                        management, and
+                        performance.
+                        Now, your designers, architects, managers, and construction professionals can work together
+                        seamlessly.
+                    </p>
+                    <p class="about__text">At PowerKh, VDC experts cooperate to deliver accurate and aesthetic visual
+                        projects.
+                        We also use BIM software to integrate schedules and cost outlays on the design stage, increasing
+                        your
+                        business productivity.
+                        Thanks to our <b>BIM services</b>, your business performance will skyrocket.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="cases">
+            <div class="container">
+                <h2 class="cases__title">Case Studies</h2>
+                <ul class="cases__list">
+                    <li class="cases__list-item">
+                        <a href="#" class="cases__list-item-link">
+                            <div class="cases__list-content">
+                                <h3 class="cases__list-title">Suspend ceiling design automation</h3>
+                                <p class="cases__list-text">some small additional details.
+                                    along the way, we've <svg>
+                                        <use href="./images/sprite.svg#right-arrow"></use>
+                                    </svg></p>
                             </div>
                         </a>
                     </li>
-                    <li class="modeling-links__item modeling-links__item_second">
-                        <a href="#">
-                            <div class="modeling-links__content">
-                                <h2 class="modeling-links__title">Modeling</h2>
-                                <p class="modeling-links__description">Hotel in USA</p>
-                                <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
-                                    class="modeling-links__image">
+                    <li class="cases__list-item">
+                        <a href="#" class="cases__list-item-link">
+                            <div class="cases__list-content">
+                                <h3 class="cases__list-title">Suspend ceiling design automation</h3>
+                                <p class="cases__list-text">some small additional details.
+                                    along the way, we've <svg>
+                                        <use href="./images/sprite.svg#right-arrow"></use>
+                                    </svg></p>
                             </div>
                         </a>
                     </li>
-                    <li class="modeling-links__item modeling-links__item_third">
-                        <a href="#">
-                            <div class="modeling-links__content">
-                                <h2 class="modeling-links__title">Modeling</h2>
-                                <p class="modeling-links__description">Hotel in USA</p>
-                                <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
-                                    class="modeling-links__image">
-                            </div>
-                        </a>
-                    </li>
-                    <li class="modeling-links__item modeling-links__item_fourth">
-                        <a href="#">
-                            <div class="modeling-links__content">
-                                <h2 class="modeling-links__title">Video</h2>
-                                <img src="./images/hero/modeling-img.png" width="225" height="150" alt="modeling"
-                                    class="modeling-links__image">
+                    <li class="cases__list-item">
+                        <a href="#" class="cases__list-item-link">
+                            <div class="cases__list-content">
+                                <h3 class="cases__list-title">Suspend ceiling design automation</h3>
+                                <p class="cases__list-text">some small additional details.
+                                    along the way, we've <svg>
+                                        <use href="./images/sprite.svg#right-arrow"></use>
+                                    </svg></p>
                             </div>
                         </a>
                     </li>
                 </ul>
+                <a href="#" class="cases__link">
+                    All cases
+                    <svg>
+                        <use href="./images/sprite.svg#right-arrow"></use>
+                    </svg>
+                </a>
             </div>
-    
-        </div>
-    </section>
-    <section class="services">
-        <div class="container">
-            <div class="services__left-side">
-                <h2 class="services__title">Bim services</h2>
-            </div>
-            <div class="services__right-side">
-                <p class="services__text">
-                    A digital design and engineering company, we offer a wide array of BIM modeling services that cover
-                    residential, commercial, educational, industrial, and transportation projects. We also work with clients
-                    in healthcare, data centers, and retail.
-                </p>
-                <p class="services__text">
-                    Our goal is to develop new and optimize existing engineering solutions for architectural and
-                    construction projects. We tuned our digital design tools to deliver high-quality services on
-                    informational modeling of buildings (BIM) and virtual construction (VDC).
-                </p>
-                <p class="services__text">
-                    BIM modeling is what we excel at. The specifics of architecture and engineering requirements are at the
-                    core of every PowerKh project. We help bring down the labor intensity of your construction by automating
-                    and optimizing the production processes.
-                </p>
-                <p class="services__text">
-                    On average, we can make your routine tasks 5 times more efficient. With a focus on effective building
-                    designs, we strive to improve the way you calculate, build, and operate.
-                </p>
-                <p class="services__text">
-                    As a BIM company, we aim to deliver smart and practical solutions to facilitate the work of AEC
-                    (Architecture, Engineering & Construction) professionals.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="about">
-        <div class="container">
-            <h2 class="about__title">Virtual design and construction by skilled professionals <span>Why Powerkh?</span></h2>
-            <div class="about__text-wrapper">
-                <p class="about__text"><b>VDC construction</b> is a critical element of a successful building project. We
-                    offer <b>virtual design and construction</b> services to improve your team's planning, management, and
-                    performance.
-                    Now, your designers, architects, managers, and construction professionals can work together seamlessly.
-                </p>
-                <p class="about__text">At PowerKh, VDC experts cooperate to deliver accurate and aesthetic visual projects.
-                    We also use BIM software to integrate schedules and cost outlays on the design stage, increasing your
-                    business productivity.
-                    Thanks to our <b>BIM services</b>, your business performance will skyrocket.
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="cases">
-        <div class="container">
-            <h2 class="cases__title">Case Studies</h2>
-            <ul class="cases__list">
-                <li class="cases__list-item">
-                    <a href="#" class="cases__list-item-link">
-                        <div class="cases__list-content">
-                            <h3 class="cases__list-title">Suspend ceiling design automation</h3>
-                            <p class="cases__list-text">some small additional details.
-                                along the way, we've <svg>
-                                    <use href="./images/sprite.svg#right-arrow"></use>
-                                </svg></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="cases__list-item">
-                    <a href="#" class="cases__list-item-link">
-                        <div class="cases__list-content">
-                            <h3 class="cases__list-title">Suspend ceiling design automation</h3>
-                            <p class="cases__list-text">some small additional details.
-                                along the way, we've <svg>
-                                    <use href="./images/sprite.svg#right-arrow"></use>
-                                </svg></p>
-                        </div>
-                    </a>
-                </li>
-                <li class="cases__list-item">
-                    <a href="#" class="cases__list-item-link">
-                        <div class="cases__list-content">
-                            <h3 class="cases__list-title">Suspend ceiling design automation</h3>
-                            <p class="cases__list-text">some small additional details.
-                                along the way, we've <svg>
-                                    <use href="./images/sprite.svg#right-arrow"></use>
-                                </svg></p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-            <a href="#" class="cases__link">
-                All cases
-                <svg>
-                    <use href="./images/sprite.svg#right-arrow"></use>
-                </svg>
-            </a>
-        </div>
-    </section>
-    <section class="customers">
-        <div class="container">
-            <h2 class="customers__title">Our Customers</h2>
-            <ul class="customers__list">
-                <li class="customers__list-item">
-                    <a href="" class="customers__list-link customers__list-link_reis">
-                        <!-- <img src="./images/customers/reis.svg" alt="reis logotype" class="customers__list-img"> -->
-                    </a>
-                </li>
-                <li class="customers__list-item">
-                    <a href="" class="customers__list-link customers__list-link_firmus">
-                        <!-- <img src="./images/customers/firmus.svg" alt="firmus logotype" class="customers__list-img"> -->
-                    </a>
-                </li>
-                <li class="customers__list-item">
-                    <a href="" class="customers__list-link customers__list-link_reveal">
-                        <!-- <img src="./images/customers/reveal.svg" alt="reveal consulting group logotype"
+        </section>
+        <section class="customers">
+            <div class="container">
+                <h2 class="customers__title">Our Customers</h2>
+                <ul class="customers__list">
+                    <li class="customers__list-item">
+                        <a href="" class="customers__list-link customers__list-link_reis">
+                            <!-- <img src="./images/customers/reis.svg" alt="reis logotype" class="customers__list-img"> -->
+                        </a>
+                    </li>
+                    <li class="customers__list-item">
+                        <a href="" class="customers__list-link customers__list-link_firmus">
+                            <!-- <img src="./images/customers/firmus.svg" alt="firmus logotype" class="customers__list-img"> -->
+                        </a>
+                    </li>
+                    <li class="customers__list-item">
+                        <a href="" class="customers__list-link customers__list-link_reveal">
+                            <!-- <img src="./images/customers/reveal.svg" alt="reveal consulting group logotype"
                             class="customers__list-img">-->
-                    </a>
-                </li>
-                <li class="customers__list-item">
-                    <a href="" class="customers__list-link customers__list-link_architectur">
-                        <!-- <img src="./images/customers/architectur.svg" alt="createArchitectur logotype"
+                        </a>
+                    </li>
+                    <li class="customers__list-item">
+                        <a href="" class="customers__list-link customers__list-link_architectur">
+                            <!-- <img src="./images/customers/architectur.svg" alt="createArchitectur logotype"
                             class="customers__list-img"> -->
-                    </a>
-    
-                </li>
-                <li class="customers__list-item">
-                    <a href="" class="customers__list-link customers__list-link_revere">
-                        <!-- <img src="./images/customers/revere.svg" alt="revere logotype" class="customers__list-img"> -->
-                    </a>
-                </li>
-                <li class="customers__list-item">
-                    <a href="" class="customers__list-link customers__list-link_wdg">
-                        <!-- <img src="./images/customers/wdg.svg" alt="wdg logotype" class="customers__list-img"> -->
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <section class="projects">
-        <div class="container">
-            <h2 class="projects__title">Bim consulting services for project support</h2>
-            <div class="projects__text-content">
-                <div class="projects__left-text-content">
-                    <p class="projects__text">If you’re wondering about the best way to approach your construction or
-                        architectural project, PowerKh offers <b>BIM consulting
-                            services</b>. With PowerKh <b>BIM consulting</b> insights,
-                        you will save costs and time necessary for successful project management. </p>
-                    <p class="projects__text">Don’t worry if you still work with paper blueprints. We will make sure your
-                        transition from paper to a digital 2D/3D model workflow is smooth and effortless.</p>
-                </div>
-                <div class="projects__right-text-content">
-                    <p class="projects__text">We will share our tried and tested <b>BIM
-                            services</b> tips and tricks with you,
-                        emphasizing integration and collaboration. Our creative team of BIM engineers is experienced in
-                        bringing
-                        together professionals from different areas. We work with project owners, architects, contractors,
-                        developers, and engineers to introduce a multi-disciplinary collaboration approach to your team. Our
-                        extensive engineering expertise in <b>BIM consulting</b> is here
-                        to help you optimize, automate, and
-                        innovate.
-                    </p>
-                </div>
-            </div>
-            <ul class="projects__list">
-                <li class="projects__list-item">
-                    <h3 class="projects__list-title">BIM Modeling</h3>
-                    <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
-                        Along the way, we've accumulat</p>
-                </li>
-                <li class="projects__list-item">
-                    <h3 class="projects__list-title">BIM Coordination</h3>
-                    <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
-                        Along the way, we've accumulat</p>
-                </li>
-                <li class="projects__list-item">
-                    <h3 class="projects__list-title">BIM Content</h3>
-                    <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
-                        Along the way, we've accumulat</p>
-                </li>
-                <li class="projects__list-item">
-                    <h3 class="projects__list-title">Design Automation</h3>
-                    <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
-                        Along the way, we've accumulat</p>
-                </li>
-                <li class="projects__list-item">
-                    <h3 class="projects__list-title">Prefabrication & Fabrication</h3>
-                    <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
-                        Along the way, we've accumulat</p>
-                </li>
-                <li class="projects__list-item">
-                    <h3 class="projects__list-title">Structural detailing</h3>
-                    <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
-                        Along the way, we've accumulat</p>
-                </li>
-                <li class="projects__list-item">
-                    <h3 class="projects__list-title">Scan-to-BIM</h3>
-                    <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
-                        Along the way, we've accumulat</p>
-                </li>
-                <li class="projects__list-item">
-                    <button type="button" class="projects__list-modal-btn">
-                        <span class="projects__list-modal-text">Contact us <br> with new <br> business injury</span>
-                        <svg width="32" height="32">
-                            <use href="./images/sprite.svg#right-arrow"></use>
-                        </svg>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </section>
-  </main>
-  <footer class="footer">
-      <div class="footer__contact-link-wrapper">
-          <div class="container">
-              <a href="#" class="footer__contact-link">
-                  Contact us
-                  <svg class="footer__contact-link-icon" width="24" height="24">
-                      <use href="./images/sprite.svg#right-arrow"></use>
-                  </svg>
-              </a>
-          </div>
-      </div>
-      <div class="container">
-          <div class="footer__list-wrapper">
-              <ul class="footer__nav-list">
-                  <li class="footer__nav-list-item">
-                      <a href="" class="footer__nav-link active-nav-link">Home</a>
-                  </li>
-                  <li class="footer__nav-list-item">
-                      <a href="" class="footer__nav-link">Case Studies</a>
-                  </li>
-                  <li class="footer__nav-list-item">
-                      <a href="" class="footer__nav-link">Insights</a>
-                  </li>
-                  <li class="footer__nav-list-item">
-                      <a href="" class="footer__nav-link">About</a>
-                  </li>
-                  <li class="footer__nav-list-item">
-                      <a href="" class="footer__nav-link">Career</a>
-                  </li>
-                  <li class="footer__nav-list-item">
-                      <a href="" class="footer__nav-link">Contacts</a>
-                  </li>
-              </ul>
-              <ul class="footer__services-list">
-                  <li class="footer__services-list-item">
-                      <h2 class="footer__services-list-title">Services:</h2>
-                  </li>
-                  <li class="footer__services-list-item">
-                      <a href="" class="footer__services-list-link">BIM Modeling</a>
-                  </li>
-                  <li class="footer__services-list-item">
-                      <a href="" class="footer__services-list-link">BIM Coordination</a>
-                  </li>
-                  <li class="footer__services-list-item">
-                      <a href="" class="footer__services-list-link">BIM Content</a>
-                  </li>
-                  <li class="footer__services-list-item">
-                      <a href="" class="footer__services-list-link">Design Automation</a>
-                  </li>
-                  <li class="footer__services-list-item">
-                      <a href="" class="footer__services-list-link">Prefabrication & Fabrication</a>
-                  </li>
-                  <li class="footer__services-list-item">
-                      <a href="" class="footer__services-list-link">Structural detailing</a>
-                  </li>
-                  <li class="footer__services-list-item">
-                      <a href="" class="footer__services-list-link">Scan-to-BIM</a>
-                  </li>
-              </ul>
-          </div>
-          <div class="footer__social-wrapper">
-              <a href="#" class="footer__up-link">
-                  Up
-                  <svg class="footer__up-link-icon" width="14" height="13">
-                      <use href="./images/sprite.svg#up-arrow"></use>
-                  </svg>
-              </a>
-              <ul class="footer__social-list">
-                  <li class="footer__social-list-item">
-                      <a href="" class="footer__social-link">
-                          <svg class="footer__social-icon" width="32" height="32">
-                              <use href="./images/sprite.svg#instagram"></use>
-                          </svg>
-                      </a>
-                  </li>
-                  <li class="footer__social-list-item">
-                      <a href="" class="footer__social-link">
-                          <svg class="footer__social-icon" width="30" height="30">
-                              <use href="./images/sprite.svg#facebook"></use>
-                          </svg>
-                      </a>
-                  </li>
-                  <li class="footer__social-list-item">
-                      <a href="" class="footer__social-link">
-                          <svg class="footer__social-icon" width="25" height="25">
-                              <use href="./images/sprite.svg#linkedin"></use>
-                          </svg>
-                      </a>
-                  </li>
-              </ul>
-          </div>
-  
-      </div>
-  </footer>
+                        </a>
 
-  <script src="./js/menu.js"></script>
+                    </li>
+                    <li class="customers__list-item">
+                        <a href="" class="customers__list-link customers__list-link_revere">
+                            <!-- <img src="./images/customers/revere.svg" alt="revere logotype" class="customers__list-img"> -->
+                        </a>
+                    </li>
+                    <li class="customers__list-item">
+                        <a href="" class="customers__list-link customers__list-link_wdg">
+                            <!-- <img src="./images/customers/wdg.svg" alt="wdg logotype" class="customers__list-img"> -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects">
+            <div class="container">
+                <h2 class="projects__title">Bim consulting services for project support</h2>
+                <div class="projects__text-content">
+                    <div class="projects__left-text-content">
+                        <p class="projects__text">If you’re wondering about the best way to approach your construction
+                            or
+                            architectural project, PowerKh offers <b>BIM consulting
+                                services</b>. With PowerKh <b>BIM consulting</b> insights,
+                            you will save costs and time necessary for successful project management. </p>
+                        <p class="projects__text">Don’t worry if you still work with paper blueprints. We will make sure
+                            your
+                            transition from paper to a digital 2D/3D model workflow is smooth and effortless.</p>
+                    </div>
+                    <div class="projects__right-text-content">
+                        <p class="projects__text">We will share our tried and tested <b>BIM
+                                services</b> tips and tricks with you,
+                            emphasizing integration and collaboration. Our creative team of BIM engineers is experienced
+                            in
+                            bringing
+                            together professionals from different areas. We work with project owners, architects,
+                            contractors,
+                            developers, and engineers to introduce a multi-disciplinary collaboration approach to your
+                            team. Our
+                            extensive engineering expertise in <b>BIM consulting</b> is here
+                            to help you optimize, automate, and
+                            innovate.
+                        </p>
+                    </div>
+                </div>
+                <ul class="projects__list">
+                    <li class="projects__list-item">
+                        <h3 class="projects__list-title">BIM Modeling</h3>
+                        <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
+                            Along the way, we've accumulat</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <h3 class="projects__list-title">BIM Coordination</h3>
+                        <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
+                            Along the way, we've accumulat</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <h3 class="projects__list-title">BIM Content</h3>
+                        <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
+                            Along the way, we've accumulat</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <h3 class="projects__list-title">Design Automation</h3>
+                        <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
+                            Along the way, we've accumulat</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <h3 class="projects__list-title">Prefabrication & Fabrication</h3>
+                        <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
+                            Along the way, we've accumulat</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <h3 class="projects__list-title">Structural detailing</h3>
+                        <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
+                            Along the way, we've accumulat</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <h3 class="projects__list-title">Scan-to-BIM</h3>
+                        <p class="projects__list-description">Some inspirational text about your work connecting to Bim.
+                            Along the way, we've accumulat</p>
+                    </li>
+                    <li class="projects__list-item">
+                        <button type="button" class="projects__list-modal-btn">
+                            <span class="projects__list-modal-text">Contact us <br> with new <br> business injury</span>
+                            <svg width="32" height="32">
+                                <use href="./images/sprite.svg#right-arrow"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__contact-link-wrapper">
+            <div class="container">
+                <a href="#" class="footer__contact-link">
+                    Contact us
+                    <svg class="footer__contact-link-icon" width="24" height="24">
+                        <use href="./images/sprite.svg#right-arrow"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer__list-wrapper">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link active-nav-link">Home</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">Case Studies</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">Insights</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">About</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">Career</a>
+                    </li>
+                    <li class="footer__nav-list-item">
+                        <a href="" class="footer__nav-link">Contacts</a>
+                    </li>
+                </ul>
+                <ul class="footer__services-list">
+                    <li class="footer__services-list-item">
+                        <h2 class="footer__services-list-title">Services:</h2>
+                    </li>
+                    <li class="footer__services-list-item">
+                        <a href="" class="footer__services-list-link">BIM Modeling</a>
+                    </li>
+                    <li class="footer__services-list-item">
+                        <a href="" class="footer__services-list-link">BIM Coordination</a>
+                    </li>
+                    <li class="footer__services-list-item">
+                        <a href="" class="footer__services-list-link">BIM Content</a>
+                    </li>
+                    <li class="footer__services-list-item">
+                        <a href="" class="footer__services-list-link">Design Automation</a>
+                    </li>
+                    <li class="footer__services-list-item">
+                        <a href="" class="footer__services-list-link">Prefabrication & Fabrication</a>
+                    </li>
+                    <li class="footer__services-list-item">
+                        <a href="" class="footer__services-list-link">Structural detailing</a>
+                    </li>
+                    <li class="footer__services-list-item">
+                        <a href="" class="footer__services-list-link">Scan-to-BIM</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__social-wrapper">
+                <a href="#" class="footer__up-link">
+                    Up
+                    <svg class="footer__up-link-icon" width="14" height="13">
+                        <use href="./images/sprite.svg#up-arrow"></use>
+                    </svg>
+                </a>
+                <ul class="footer__social-list">
+                    <li class="footer__social-list-item">
+                        <a href="" class="footer__social-link">
+                            <svg class="footer__social-icon" width="32" height="32">
+                                <use href="./images/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-list-item">
+                        <a href="" class="footer__social-link">
+                            <svg class="footer__social-icon" width="30" height="30">
+                                <use href="./images/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-list-item">
+                        <a href="" class="footer__social-link">
+                            <svg class="footer__social-icon" width="25" height="25">
+                                <use href="./images/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
